@@ -23,5 +23,11 @@ window.onload = function() {
       }
     }
   }
+
+  let domainList = document.querySelector(".domainsList");
+
+  for (let i = 0; i < domain.length; i++) {
+    domainList.innerHTML += "<li>" + domain[i] + "</li>";
+  }
   console.log(domain);
 };
